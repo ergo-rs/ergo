@@ -1,0 +1,12 @@
+[package]
+name = "eztd-core"
+version = "0.0.1"
+description = "Quick start Rust"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/epage/eztd"
+readme = "README.md"
+categories = ["data-structures"]
+keywords = ["development", "prototype"]
+edition = "2018"
+
+[dependencies]
