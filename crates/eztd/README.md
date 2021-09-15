@@ -1,6 +1,6 @@
 # eztd
 
-> **Quick start Ruxt**
+> **Quick start Rust**
 
 [![Documentation](https://img.shields.io/badge/docs-master-blue.svg)][Documentation]
 ![License](https://img.shields.io/crates/l/eztd.svg)
