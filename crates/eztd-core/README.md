@@ -17,3 +17,5 @@ Dual-licensed under [MIT](LICENSE-MIT) or [Apache 2.0](LICENSE-APACHE)
 ## About
 
 `eztd-core` is the always-included core of eztd
+
+[Documentation]: https://docs.rs/eztd-core

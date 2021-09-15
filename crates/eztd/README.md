@@ -40,3 +40,5 @@ Non-goals:
 - [easy_strings](https://crates.io/crates/easy_strings)
 - [easy_collections](https://crates.io/crates/easy_collections)
 - [xshell](https://github.com/matklad/xshell)
+
+[Documentation]: https://docs.rs/eztd
