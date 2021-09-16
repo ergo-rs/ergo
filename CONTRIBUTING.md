@@ -36,9 +36,14 @@ to re-work some of it and the discouragement that goes along with that.
   - Function parameters accept a wide variety of types (e.g. `impl AsRef<str>` rather than `eztd::String`)
   - Types have functions to/from the wrapped type, in a separate "Interop" section
 - Leverage Python muscle memory by including ports of Python functions on types with Python analogs:
+  - **This is an ideal, not a blocker, for contributions**
   - Marked as deprecated, describing the idiomatic Rust approach
   - In a separate "transitional Python" section
   - These do not need extensive documentation
+- Be mindful of build times
+  - Leverage features to keep things paired down
+  - It is considered a bug against `ezstd` to depend on multiple versions of a dependency
+    - **This is an ideal, not a blocker, for contributions**
 - Easy feature opt-in
   - Major functionality exists in separate crates with the name `ez-<role>`
   - `eztd` pulls in those crates as module `<role>` with non-default features named `<role>`
