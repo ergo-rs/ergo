@@ -39,6 +39,7 @@ Non-goals:
 - [ergo](https://crates.io/crates/ergo)
 - [easy_strings](https://crates.io/crates/easy_strings)
 - [easy_collections](https://crates.io/crates/easy_collections)
-- [xshell](https://github.com/matklad/xshell)
+- [xshell](https://crates.io/crates/xshell)
+- [quicli](https://crates.io/crates/quicli)
 
 [Documentation]: https://docs.rs/eztd
