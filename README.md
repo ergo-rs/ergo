@@ -1,1 +1,1 @@
-crates/eztd/README.md
+crates/ergo/README.md
