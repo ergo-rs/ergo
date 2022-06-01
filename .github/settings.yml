@@ -2,12 +2,12 @@
 
 repository:
   description: "std-alternative prototyping / education library"
-  topics: rust cli std
+  topics: "rust cli std"
   has_issues: true
   has_projects: false
   has_wiki: false
   has_downloads: true
-  default_branch: main
+  default_branch: "main"
 
   allow_squash_merge: true
   allow_merge_commit: true
@@ -18,21 +18,21 @@ repository:
 
 labels:
   # Type
-  - name: bug
+  - name: "bug"
     color: '#b60205'
-    description: Not as expected
-  - name: enhancement
+    description: "Not as expected"
+  - name: "enhancement"
     color: '#1d76db'
-    description: Improve the expected
+    description: "Improve the expected"
   # Flavor
-  - name: question
+  - name: "question"
     color: "#cc317c"
-    description: Uncertainty is involved
-  - name: breaking-change
+    description: "Uncertainty is involved"
+  - name: "breaking-change"
     color: "#e99695"
-  - name: good first issue
+  - name: "good first issue"
     color: '#c2e0c6'
-    description: Help wanted!
+    description: "Help wanted!"
 
 branches:
   - name: main
