@@ -1,8 +1,8 @@
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 
 repository:
-  description: Source code spell checker
-  topics: rust cli code-quality spell-checker
+  description: "std-alternative prototyping / education library"
+  topics: rust cli std
   has_issues: true
   has_projects: false
   has_wiki: false
