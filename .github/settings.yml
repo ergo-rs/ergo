@@ -15,3 +15,33 @@ repository:
 
   # Manual: allow_auto_merge: true, see https://github.com/probot/settings/issues/402
   delete_branch_on_merge: true
+
+labels:
+  # Type
+  - name: "bug"
+    color: '#b60205'
+    description: "Not as expected"
+  - name: "enhancement"
+    color: '#1d76db'
+    description: "Improve the expected"
+  # Flavor
+  - name: "question"
+    color: "#cc317c"
+    description: "Uncertainty is involved"
+  - name: "breaking-change"
+    color: "#e99695"
+  - name: "good first issue"
+    color: '#c2e0c6'
+    description: "Help wanted!"
+
+branches:
+  - name: main
+    protection:
+      required_pull_request_reviews: null
+      required_conversation_resolution: true
+      required_status_checks:
+        # Required. Require branches to be up to date before merging.
+        strict: false
+        contexts: ["CI", "Lint Commits", "Spell Check with Typos"]
+      enforce_admins: false
+      restrictions: null
