@@ -16,7 +16,7 @@ Dual-licensed under [MIT](LICENSE-MIT) or [Apache 2.0](LICENSE-APACHE)
 
 ## About
 
-`ergo` is meant to close the ergonomics gap between Rust and Python.
+`ergo` is meant to close the ergonomics gap between Rust and Python by providing a std-alternative library.
 
 Use cases:
 - Learning
