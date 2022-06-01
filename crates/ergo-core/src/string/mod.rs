@@ -40,7 +40,7 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let s = eztd_core::String::new();
+    /// let s = ergo_core::String::new();
     /// ```
     #[inline]
     pub const fn new() -> Self {
@@ -56,7 +56,7 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let a = eztd_core::String::from("foo");
+    /// let a = ergo_core::String::from("foo");
     /// assert_eq!(a.byte_len(), 3);
     /// ```
     #[inline]
@@ -71,10 +71,10 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let s = eztd_core::String::from("");
+    /// let s = ergo_core::String::from("");
     /// assert!(s.is_empty());
     ///
-    /// let s = eztd_core::String::from("not empty");
+    /// let s = ergo_core::String::from("not empty");
     /// assert!(!s.is_empty());
     /// ```
     #[inline]
@@ -91,7 +91,7 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let a = eztd_core::String::from("foo");
+    /// let a = ergo_core::String::from("foo");
     /// assert_eq!(a.char_len(), 3);
     /// ```
     #[inline]
@@ -113,9 +113,9 @@ impl String {
     /// # Examples
     ///
     /// ```
-    /// let v = eztd_core::String::from("Hello World");
+    /// let v = ergo_core::String::from("Hello World");
     ///
-    /// assert_eq!(Some(eztd_core::String::from("Hell")), v.get(0..4));
+    /// assert_eq!(Some(ergo_core::String::from("Hell")), v.get(0..4));
     /// ```
     #[inline]
     pub fn get(&self, range: impl std::ops::RangeBounds<usize>) -> Option<Self> {
@@ -148,7 +148,7 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let s = eztd_core::String::from("Per Martin");
+    /// let s = ergo_core::String::from("Per Martin");
     ///
     /// let (first, last) = s.split_at(3);
     ///
@@ -171,7 +171,7 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let mut bytes = eztd_core::String::from("bors").bytes();
+    /// let mut bytes = ergo_core::String::from("bors").bytes();
     ///
     /// assert_eq!(Some(b'b'), bytes.next());
     /// assert_eq!(Some(b'o'), bytes.next());
@@ -219,12 +219,12 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let s = eztd_core::String::from("foo");
+    /// let s = ergo_core::String::from("foo");
     ///
     /// let s = s.join_str("bar");
     /// assert_eq!("foobar", s);
     ///
-    /// let baz = eztd_core::String::from("baz");
+    /// let baz = ergo_core::String::from("baz");
     /// let s = s.join_str(baz);
     ///
     /// assert_eq!("foobarbaz", s);
@@ -245,7 +245,7 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let s = eztd_core::String::from("abc");
+    /// let s = ergo_core::String::from("abc");
     ///
     /// let s = s.join_char('1').join_char('2').join_char('3');
     ///
@@ -267,7 +267,7 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let s = eztd_core::String::from("foo");
+    /// let s = ergo_core::String::from("foo");
     ///
     /// let s = s.shrink_to_fit();
     /// ```
@@ -348,7 +348,7 @@ impl String {
     /// Basic usage:
     ///
     /// ```
-    /// let s = eztd_core::String::from("foo");
+    /// let s = ergo_core::String::from("foo");
     ///
     /// assert_eq!("foo", s.as_str());
     /// ```
@@ -482,8 +482,8 @@ impl FromIterator<StdString> for String {
 /// Concatenating two `String`s takes the first by value and borrows the second:
 ///
 /// ```
-/// let a = eztd_core::String::from("hello");
-/// let b = eztd_core::String::from(" world");
+/// let a = ergo_core::String::from("hello");
+/// let b = ergo_core::String::from(" world");
 /// let c = &a + &b + "foo";
 /// ```
 impl<'s, S: AsRef<str>> std::ops::Add<S> for &'s String {

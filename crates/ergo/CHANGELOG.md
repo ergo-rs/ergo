@@ -8,4 +8,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased] - ReleaseDate
 
 <!-- next-url -->
-[Unreleased]: https://github.com/epage/eztd/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com/ergo-rs/ergo/compare/v0.1.0...HEAD

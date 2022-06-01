@@ -1,10 +1,10 @@
-# eztd
+# ergo
 
 > **Quick start Rust**
 
 [![Documentation](https://img.shields.io/badge/docs-master-blue.svg)][Documentation]
-![License](https://img.shields.io/crates/l/eztd.svg)
-[![Crates Status](https://img.shields.io/crates/v/eztd.svg)](https://crates.io/crates/eztd)
+![License](https://img.shields.io/crates/l/ergo.svg)
+[![Crates Status](https://img.shields.io/crates/v/ergo.svg)](https://crates.io/crates/ergo)
 
 Dual-licensed under [MIT](LICENSE-MIT) or [Apache 2.0](LICENSE-APACHE)
 
@@ -16,7 +16,7 @@ Dual-licensed under [MIT](LICENSE-MIT) or [Apache 2.0](LICENSE-APACHE)
 
 ## About
 
-`eztd` is meant to close the ergonomics gap between Rust and Python.
+`ergo` is meant to close the ergonomics gap between Rust and Python.
 
 Use cases:
 - Learning
@@ -36,10 +36,10 @@ Non-goals:
 
 ### Prior Art
 
-- [ergo](https://crates.io/crates/ergo)
+- The previous [ergo](https://github.com/rust-crates/ergo)
 - [easy_strings](https://crates.io/crates/easy_strings)
 - [easy_collections](https://crates.io/crates/easy_collections)
 - [xshell](https://crates.io/crates/xshell)
 - [quicli](https://crates.io/crates/quicli)
 
-[Documentation]: https://docs.rs/eztd
+[Documentation]: https://docs.rs/ergo

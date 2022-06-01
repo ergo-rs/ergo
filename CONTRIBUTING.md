@@ -1,4 +1,4 @@
-# Contributing to `eztd`
+# Contributing to `ergo`
 
 Thanks for wanting to contribute! There are many ways to contribute and we
 appreciate any level you're willing to do.
@@ -33,7 +33,7 @@ to re-work some of it and the discouragement that goes along with that.
   - Inherent functions take `&self` (or `&mut self` for mutable types)
   - Functions return owned types
 - Maintain interop when wrapping types that are "vocab terms" in Rust, including:
-  - Function parameters accept a wide variety of types (e.g. `impl AsRef<str>` rather than `eztd::String`)
+  - Function parameters accept a wide variety of types (e.g. `impl AsRef<str>` rather than `ergo::String`)
   - Types have functions to/from the wrapped type, in a separate "Interop" section
 - Leverage Python muscle memory by including ports of Python functions on types with Python analogs:
   - **This is an ideal, not a blocker, for contributions**
@@ -46,7 +46,7 @@ to re-work some of it and the discouragement that goes along with that.
     - **This is an ideal, not a blocker, for contributions**
 - Easy feature opt-in
   - Major functionality exists in separate crates with the name `ez-<role>`
-  - `eztd` pulls in those crates as module `<role>` with non-default features named `<role>`
+  - `ergo` pulls in those crates as module `<role>` with non-default features named `<role>`
   - module `<role>`'s documentation will be inlined for easier browsing
   - Purpose:
     - Balance batteries-included with compile time
@@ -73,7 +73,7 @@ As a heads up, we'll be running your PR through the following gauntlet:
 
 Check out our [CI][travis] for more information.
 
-[issues]: https://github.com/epage/eztd/issues
-[new issue]: https://github.com/epage/eztd/issues/new
-[all issues]: https://github.com/epage/eztd/issues?utf8=%E2%9C%93&q=is%3Aissue
-[travis]: https://github.com/epage/eztd/blob/master/.travis.yml
+[issues]: https://github.com/ergo-rs/ergo/issues
+[new issue]: https://github.com/ergo-rs/ergo/issues/new
+[all issues]: https://github.com/ergo-rs/ergo/issues?utf8=%E2%9C%93&q=is%3Aissue
+[travis]: https://github.com/ergo-rs/ergo/blob/master/.travis.yml

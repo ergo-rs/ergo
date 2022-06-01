@@ -1,13 +1,13 @@
 [package]
-name = "eztd"
+name = "ergo"
 version = "0.0.3"
 description = "Quick start Rust"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/epage/eztd"
+repository = "https://github.com/ergo-rs/ergo"
 readme = "README.md"
 categories = ["data-structures"]
 keywords = ["development", "prototype"]
 edition = "2018"
 
 [dependencies]
-eztd-core = { version = "^0.0.3", path = "../eztd-core" }
+ergo-core = { version = "^0.0.3", path = "../ergo-core" }
