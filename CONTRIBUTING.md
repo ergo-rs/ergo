@@ -53,7 +53,7 @@ Overall
   - It is considered a bug against `ezstd` to depend on multiple versions of a dependency
     - **This is an ideal, not a blocker, for contributions**
 - Easy feature opt-in
-  - Major functionality exists in separate crates with the name `ez-<role>`
+  - Major functionality exists in separate crates with the name `ergo-<role>`
   - `ergo` pulls in those crates as module `<role>` with non-default features named `<role>`
   - module `<role>`'s documentation will be inlined for easier browsing
   - Purpose:
