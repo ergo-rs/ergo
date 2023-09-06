@@ -29,12 +29,20 @@ to re-work some of it and the discouragement that goes along with that.
 
 ### Design Guidelines
 
+Overall
+
+- Be cohesive
+  - The API should all interact with the same types (e.g. if we have our own string type, it should be the only string type used everywhere)
+  - Documentation on docs.rs should look like everything is part of the same library, even if we re-export
 - Minimize interaction with the lifetimes, including:
   - Inherent functions take `&self` (or `&mut self` for mutable types)
   - Functions return owned types
 - Maintain interop when wrapping types that are "vocab terms" in Rust, including:
   - Function parameters accept a wide variety of types (e.g. `impl AsRef<str>` rather than `ergo::String`)
   - Types have functions to/from the wrapped type, in a separate "Interop" section
+- Focus on core operations in APIs rather than offering every variant with its own optimizations
+  - Not quite "there should be only one way to do things" but close
+  - This will make the API easier to browse and easier to remember
 - Leverage Python muscle memory by including ports of Python functions on types with Python analogs:
   - **This is an ideal, not a blocker, for contributions**
   - Marked as deprecated, describing the idiomatic Rust approach
@@ -51,6 +59,12 @@ to re-work some of it and the discouragement that goes along with that.
   - Purpose:
     - Balance batteries-included with compile time
     - Make it easier to track semver breaking changes
+
+Reuse guidelines
+- In the ideal world, all "interesting" code comes from lower level packages so we don't wall it off from others and reuse what others have done
+- When a package provides fairly isolated API that is close enough to our guidelines, we can either recommend it or re-export it depending on how close it is to our core needs
+- If the package has low enough impedance mismatch for us to wrap, we should
+- Otherwise, we should re-implement
 
 ### Process
 
